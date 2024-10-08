@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duster 4x4</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1> DUSTER 4X4</h1>
-    <form action="/host" method="post">
-        <label for="nome"> Nome: </label>
-        <input type="text" id="nome"/>
-        <label for="email"> E-mail: </label>
-        <input type="email" id="email"/>
-        <label for="msg"> Mensagem: </label>
-        <textarea id="msg"> </textarea> 
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Duster 4x4</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1> DUSTER 4X4</h1>
+        <div class="imgGrid">
+            <div class="img1Container">
+                <p id="legenda-principal"> O modelo tem 4,31 m de comprimento, 1,82 m de largura e 2,67 m de entre-eixos (a versão 4x2 carrega 475 litros no porta-malas, enquanto a 4x4 leva 400 litros; a diferença se dá em razão da posição do estepe). Vendido nas versões 1.6, Expression 1.6 16v, Dynamique 1.6 16v e 2.0 16v (câmbio manual 4x2 ou 4x4 ou automático 4x2), e Tech Road 2.0 16v (manual 4x2 0u 4x4 ou automático 4x2), o Duster tem como principal concorrente o Ford EcoSport. </p>
+                <img id="img1" src="imagens/principal.jpeg" alt="Imagem da Duster">              
+            </div>
+            <div class="sidebar">
+                <div>
+                    <img id="img2" src="imagens/lateral.jpeg" alt="Imagem da Duster">
+                    <p>legenda2</p>
+                </div>
+                <div>
+                    <img id="img3" src="imagens/costas.jpeg" alt="Imagem da Duster">
+                    <p>legenda3</p>
+                </div> 
+            </div>
+            <div class="sidebar">
+                <div>
+                    <img id="img4" src="imagens/lateral.jpeg" alt="Imagem da Duster">
+                    <p>legenda2</p>
+                </div>
+                <div>
+                    <img id="img5" src="imagens/costas.jpeg" alt="Imagem da Duster">
+                    <p>legenda3</p>
+                </div> 
+            </div>             
+        </div>
+        <div>
+            <h3 id="preco"> Preço: R$ 56.000 </h3>
+            <br>
+        </div>
+        <div>
+            <p> Para maiores informações, intre em contato através do formulário abaixo</p>
+        </div>
+        <div>
+        <form action="/host" method="post">
+                <label for="nome"> Nome: </label>
+                <input type="text" id="nome"/>
+                <br>
+                <label for="email"> E-mail: </label>
+                <input type="email" id="email"/>
+                <br>
+                <label for="msg"> Mensagem: </label>
+                <textarea id="msg"> </textarea> 
+        </form>
+        </div>
+    
+    </body>
 </html>
